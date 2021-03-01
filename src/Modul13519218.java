@@ -2,13 +2,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class RencanaKuliah {
+public class Modul13519218 {
 
     // Representasi graf sebagai adjacency list
     private Map<String, List<String>> adjMataKuliah;
 
     // default ctor
-    RencanaKuliah() {
+    Modul13519218() {
         this.adjMataKuliah = new HashMap<>();
     }
 
@@ -57,8 +57,8 @@ public class RencanaKuliah {
     }
 
     // Membuat Rencana Mata Kuliah dari masukan File txt
-    static RencanaKuliah createNewFromFile () {
-        RencanaKuliah rencanaKuliah = new RencanaKuliah();
+    static Modul13519218 createNewFromFile () {
+        Modul13519218 rencanaKuliah = new Modul13519218();
 
         try {
             Scanner scanner = new Scanner(System.in);
@@ -88,7 +88,7 @@ public class RencanaKuliah {
     }
 
     // Implementasi Topological Sort
-    static void TopologicalSort(RencanaKuliah rencanaKuliah, ArrayList<List<String>> result) {
+    static void TopologicalSort(Modul13519218 rencanaKuliah, ArrayList<List<String>> result) {
         while (!rencanaKuliah.isEmpty()) {
             ArrayList<String> currSmt = new ArrayList<>();  // List of string untuk menyimpan mata kuliah yang akan dieliminasi
             String[] keys = rencanaKuliah.adjMataKuliah.keySet().toArray(new String[0]);    // Array of string yang berisi seluruh mata kuliah dalam graf
@@ -216,7 +216,7 @@ public class RencanaKuliah {
 
     public static void main(String[] args) {
         printLogo();
-        RencanaKuliah rencanaKuliah = createNewFromFile();
+        Modul13519218 rencanaKuliah = createNewFromFile();
         ArrayList<List<String>> result = new ArrayList<>();
         TopologicalSort(rencanaKuliah, result);
         printSolution(result);
