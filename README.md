@@ -7,7 +7,7 @@ Anda harus menginstal Java di dalam device Anda untuk menggunakan program ini. A
 ## WELCOME!
 Untuk menjalankan program melalui command line, silakan navigasi ke folder bin. Kemudian masukkan:
 ```
-  java RencanaKuliah
+  java Modul13519218
 ```
 ![Main Menu](img/main-menu.jpg)
 
